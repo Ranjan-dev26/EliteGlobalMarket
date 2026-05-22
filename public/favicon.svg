@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Definitions for gradients and shadows -->
+  <defs>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="50%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4b5563" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <radialGradient id="globeGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="75%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </radialGradient>
+  </defs>
+
+  <!-- Left Side: Globe representing the Earth with continent textures -->
+  <circle cx="170" cy="230" r="105" fill="url(#globeGrad)" />
+  
+  <!-- Continental Outline Style Grids -->
+  <path d="M 120,150 C 130,140 150,135 170,140 C 190,145 200,165 210,165 C 220,165 240,150 250,165 C 260,180 230,200 210,195 C 190,190 180,205 160,205 C 140,205 110,170 120,150 Z" fill="#22c55e" opacity="0.3" />
+  <path d="M 90,220 C 100,210 120,210 130,225 C 140,240 160,245 155,260 C 150,275 165,290 150,310 C 135,330 110,320 100,290 C 90,260 80,230 90,220 Z" fill="#22c55e" opacity="0.32" />
+  
+  <!-- Subtle circular grid line overlays -->
+  <circle cx="170" cy="230" r="103" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.4" />
+  
+  <!-- Sweeping orbit borders (The green-and-dark nested crescent shapes wrapping the logo) -->
+  <path d="M 235,110 C 215,85 165,70 115,100 C 60,135 48,225 80,285 C 110,340 155,360 215,365 C 255,368 285,355 315,330" fill="none" stroke="url(#greenGrad)" stroke-width="10" stroke-linecap="round" />
+  <path d="M 180,410 C 240,430 330,420 385,370 C 445,315 455,220 415,150 C 390,110 345,95 295,90" fill="none" stroke="url(#darkGrad)" stroke-width="10" stroke-linecap="round" />
+
+  <!-- Stylized modern "E" customized to flow precisely with the original template -->
+  <path d="M 200,165 H 295 V 212 H 240 V 242 H 280 V 282 H 240 V 315 H 298 V 365 H 200 Z" fill="url(#greenGrad)" />
+
+  <!-- Stylized modern matching "G" customized on the right -->
+  <path d="M 370,185 C 330,185 305,220 295,255 C 285,295 300,345 340,362 C 375,375 410,355 418,318 C 424,288 408,268 375,268 M 375,268 H 325 V 315 H 375 Z" fill="none" stroke="url(#darkGrad)" stroke-width="45" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Small floating administrative blocks in top right representing software, scale, and modern tech nodes -->
+  <rect x="425" y="80" width="16" height="16" fill="#22c55e" rx="3" />
+  <rect x="450" y="105" width="16" height="16" fill="#15803d" rx="3" />
+  <rect x="405" y="112" width="12" height="12" fill="#1e293b" rx="2" />
+  <rect x="430" y="138" width="12" height="12" fill="#4ade80" rx="2" />
+  <rect x="382" y="92" width="8" height="8" fill="#22c55e" rx="1.5" />
+</svg>

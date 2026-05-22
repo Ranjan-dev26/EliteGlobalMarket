@@ -1,0 +1,6 @@
+{
+  "name": "TradeCapitalMarket",
+  "description": "Institutional Forex Technology Provider - Premium solutions including Forex CRM, Liquidity feeds, AI Trading Robots, and custom trading infrastructure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
