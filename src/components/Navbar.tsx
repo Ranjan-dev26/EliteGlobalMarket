@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Activity, ShieldAlert, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import logoImg from '../assets/images/logo2.png';
 
 const NAV_LINKS = [
   { path: '/', label: 'Home' },
@@ -52,18 +53,24 @@ export function Navbar() {
             to="/"
             className="flex items-center gap-2 group focus:outline-none"
           >
-            <div className="relative w-9 h-9 flex items-center justify-center bg-amber-950/40 border border-amber-500/30 rounded-lg overflow-hidden group-hover:border-amber-400 transition-all shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+            {/* <div className="relative w-9 h-9 flex items-center justify-center bg-amber-950/40 border border-amber-500/30 rounded-lg overflow-hidden group-hover:border-amber-400 transition-all shadow-[0_0_15px_rgba(245,158,11,0.2)]">
               <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/20 to-yellow-500/10 group-hover:opacity-100 transition-opacity" />
               <Activity className="w-5 h-5 text-amber-400 group-hover:scale-110 transition-transform duration-300" />
-            </div>
-            <div className="flex flex-col">
+            </div> */}
+            
+            <div className="flex items-center justify-center">
+              <img
+                src={logoImg}
+                alt="EliteGlobal Market Logo"
+                className="h-18 w-32 object-contain"
+              />
 
-              <span className="font-sans font-extrabold text-[16px] leading-[1.1] tracking-tight bg-gradient-to-r from-white via-neutral-100 to-amber-400 bg-clip-text text-transparent">
+              {/* <span className="font-sans font-extrabold text-[16px] leading-[1.1] tracking-tight bg-gradient-to-r from-white via-neutral-100 to-amber-400 bg-clip-text text-transparent">
                 EliteGlobal
               </span>
               <span className="font-sans text-[10px] tracking-widest text-amber-400 font-bold uppercase">
                 Market
-              </span>
+              </span> */}
             </div>
           </Link>
 

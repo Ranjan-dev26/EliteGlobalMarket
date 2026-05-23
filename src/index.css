@@ -100,9 +100,9 @@ html.light .from-\[\#040411\] {
 html.light .bg-neutral-900\/30,
 html.light .bg-neutral-900\/20,
 html.light .bg-neutral-900\/40,
-html.light .bg-[#090916]\/50,
-html.light .bg-[#0a0a24],
-html.light .bg-[#020207],
+html.light .bg-\[\#090916\]\/50,
+html.light .bg-\[\#0a0a24\],
+html.light .bg-\[\#020207\],
 html.light .bg-neutral-950\/40 {
   background-color: rgba(255, 255, 255, 0.8) !important;
   backdrop-filter: blur(12px) !important;
